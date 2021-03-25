@@ -62,6 +62,7 @@ did userwin function
         the program get's the user's choice from the dom: document.querySelector('input:checked)
         the program compares the user's choice w/ the result of get-random-throw function to generate a game results(user's persp) for win lose or draw
             ** function must bring in getRandomThrow function
+            ** getRandomThrow function turned to const
             ** function didUserWin (player, computer) {
                 if (player === computer) return draw
                 if player === rock && computer === scissors return win

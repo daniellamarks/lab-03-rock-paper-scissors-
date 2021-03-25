@@ -20,64 +20,40 @@ test('if player = computer, return draw', (expect) => {
 
 test('if player === rock && computer === scissors return win', (expect) => {
     
-    const expected = true;
-    const actual = true;
+    const expected = 'win';
+    const actual = didUserWin('rock', 'scissors');
     expect.equal(actual, expected);
     
 });
+
 test('if player === paper && computer === rock return win', (expect) => {
     
-    const expected = true;
-    const actual = true;
+    const expected = 'win';
+    const actual = didUserWin('paper', 'rock');
     expect.equal(actual, expected);
 
 });
+
 test('if player === paper && computer === scissors return lose', (expect) => {
     
-    const expected = true;
-    const actual = true;
+    const expected = 'lose';
+    const actual = didUserWin('paper', 'scissors');
     expect.equal(actual, expected);
 
 });
-test('if player === scissors && computer === rock return win', (expect) => {
+
+test('if player === scissors && computer === rock return lose', (expect) => {
     
-    const expected = true;
-    const actual = true;
+    const expected = 'lose';
+    const actual = didUserWin('scissors', 'rock');
     expect.equal(actual, expected);
 
 });
+
 test('if player === scissors && computer === paper return lose', (expect) => {
     
-    const expected = true;
-    const actual = true;
-    expect.equal(actual, expected);
-
-});
-test('if player = computer, return draw', (expect) => {
-    
-    const expected = true;
-    const actual = true;
-    expect.equal(actual, expected);
-
-});
-test('if player = computer, return draw', (expect) => {
-    
-    const expected = true;
-    const actual = true;
-    expect.equal(actual, expected);
-
-});
-test('if player = computer, return draw', (expect) => {
-    
-    const expected = true;
-    const actual = true;
-    expect.equal(actual, expected);
-
-});
-test('if player = computer, return draw', (expect) => {
-    
-    const expected = true;
-    const actual = true;
+    const expected = 'win';
+    const actual = didUserWin('scissors', 'paper');
     expect.equal(actual, expected);
 
 });

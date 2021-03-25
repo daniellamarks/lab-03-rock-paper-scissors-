@@ -23,15 +23,15 @@
         </section>
         <section class="user-choice-wrap">
             <label>
-                <input id="rock" type="radio" name="userthrow" value="you threw scissors" checked>
+                <input id="rock" type="radio" name="userthrow" value="rock" checked>
                 <img src="./assets/rock.png">
            </label>
            <label>
-               <input id="paper" type="radio" name="userthrow" value="you threw paper">
+               <input id="paper" type="radio" name="userthrow" value="paper">
                <img src="./assets/paper.png">
            </label>
            <label>
-            <input id="scissors" type="radio" name="userthrow" value="you threw scissors">
+            <input id="scissors" type="radio" name="userthrow" value="scissors">
             <img src="./assets/scissors.png">
         </label>
         </section>
@@ -39,10 +39,15 @@
         <div><button id="throw">Rochambeau!</button></div>
         
         <section class="display-score">
+
+            <div><span id="user-throw"></span></div>
+            <div><span id="computer-throw"></span></div>
             <div><span id="who-won"></span></div>
-            <div><span id="wins">Wins: 0</span></div>
-            <div><span id="losses">Losses: 0</span></div>
-            <div><span id="draws">Draws: 0</span></div>
+            <div class="wins-and-losses">
+                <div><span id="wins">Wins: 0</span></div>
+                <div><span id="losses">Losses: 0</span></div>
+                <div><span id="draws">Draws: 0</span></div>
+            </div>
         </section>
         <div><button id="reset">Reset Score</button></div>
     </main>
