@@ -1,3 +1,47 @@
+img {
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+}
+
+input {
+    display: none;
+}
+
+input:checked + img {
+    box-shadow: 2px 2px 10px 2px green;
+    border-radius: 50%;
+}
+
+.user-choice-wrap {
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 body {
     /* https://coolors.co/generate and click export -> scss to get the colors to copy and paste below*/
