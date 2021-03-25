@@ -8,3 +8,4 @@ export function didUserWin(player, computer) {
     if (player === 'scissors' && computer === 'rock') return 'lose';
     if (player === 'scissors' && computer === 'paper') return 'win';
 }
+
