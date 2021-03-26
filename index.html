@@ -12,48 +12,61 @@
 
 <body>
     <header>
-       <h1>Rochambeau!</h1>
+       <h1 class="grow">Rochambeau!</h1>
     </header>
     <main>
         <section class="instructions">
             <p>paper beats rock</p>
             <p>rock beats scissors</p>
             <p>scissors beats paper</p>
-            <p>Let's go!</p>
+            <p class="font">Let's go!</p>
         </section>
-        <section class="user-choice-wrap">
-            <label>
-                <input id="rock" type="radio" name="userthrow" value="rock" checked>
-                <img src="./assets/rock.png">
-           </label>
-           <label>
-               <input id="paper" type="radio" name="userthrow" value="paper">
-               <img src="./assets/paper.png">
-           </label>
-           <label>
-            <input id="scissors" type="radio" name="userthrow" value="scissors">
-            <img src="./assets/scissors.png">
-        </label>
-        </section>
-
-        <div><button id="throw">Rochambeau!</button></div>
+        
+        <div class="images-wrap">
+            <section class="user-choice-wrap">
+                <p class="font">YOU</p>
+                <label>
+                    <input id="rock" type="radio" name="userthrow" value="rock" checked>
+                    <img class="bounce-5" src="./assets/rock.png">
+                </label>
+                <label>
+                <input id="paper" type="radio" name="userthrow" value="paper">
+                <img class="bounce-5" src="./assets/paper.png">
+                </label>
+                <label>
+                    <input id="scissors" type="radio" name="userthrow" value="scissors">
+                    <img class="bounce-5" src="./assets/scissors.png">
+                </label>
+            </section>
+            <section class="computer-choice-wrap">
+                <p class="font">ME</p>
+                <img class="bounce-6" src="./assets/scissors.png">
+                <img class="bounce-6" src="./assets/paper.png">
+                <img class="bounce-6" src="./assets/rock.png">
+            </section>
+        </div>
+        
+        <div class="just-button">
+            <button id="throw" class="throw font">Rochambeau!</button>
+        </div>
         
         <section class="display-score">
-
-            <div><span id="user-throw"></span></div>
-            <div><span id="computer-throw"></span></div>
-            <div><span id="who-won"></span></div>
+            <p id="user-throw"></p>
+            <p id="computer-throw"></p>
+            <p id="who-won" class="font"></p>
             <div class="wins-and-losses">
-                <div>Wins: <span id="wins">0</span></div>
-                <div>Losses: <span id="losses"> 0</span></div>
-                <div>Draws: <span id="draws">0</span></div>
+                <div>Wins: <p id="wins" class="font-small">0</p></div>
+                <div>Losses: <p id="losses" class="font-small"> 0</p></div>
+                <div>Draws: <p id="draws" class="font-small">0</p></div>
             </div>
+            <button id="reset">Reset Score</button>
+            <div>You have reset the score <span id="reset-times">0</span> times.</div>
         </section>
-        <div><button id="reset">Reset Score</button></div>
+        
     </main>
     
     <footer>
-        <div class="copy gutter-right">&copy; 2020 Alchemy Code Lab</div>
+        <div class="copy gutter-right">&copy; 2021 dm</div>
     </footer>
 
     <script type="module" src="app.js"></script>

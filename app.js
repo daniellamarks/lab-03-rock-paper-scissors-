@@ -10,6 +10,7 @@ const winsEl = document.getElementById('wins');
 const lossesEl = document.getElementById('losses');
 const drawsEl = document.getElementById('draws');
 const reset = document.getElementById('reset');
+const resetTimes = document.getElementById('reset-times');
 // initialize state
 
 let wins = 0;
@@ -39,7 +40,7 @@ buttonEl.addEventListener('click', () => {
     } else {
         whoWonEl.textContent = `You ${userWinOrLose}!`;}
 
-        
+
     if (userWinOrLose === 'win') {
         wins++;
     } else if (userWinOrLose === 'draw') {
@@ -53,6 +54,8 @@ buttonEl.addEventListener('click', () => {
     
 });
 
+let numberOfResets = 0;
+
 reset.addEventListener('click', ()=> {
     userThrowEl.textContent = '';
     compThrowEl.textContent = '';
@@ -62,4 +65,8 @@ reset.addEventListener('click', ()=> {
     lossesEl.textContent = 0;
     winsEl.textContent = 0;
     drawsEl.textContent = 0;
+    numberOfResets++;
+    resetTimes.textContent = numberOfResets; 
 });
+
+
