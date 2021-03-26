@@ -26,19 +26,12 @@ buttonEl.addEventListener('click', () => {
     const userThrow = currentlySelectedButton.value;
     const userWinOrLose = didUserWin(userThrow, compThrow);
 
-    console.log(compThrow);
-    console.log(userThrow);
-    console.log(userWinOrLose);
-
     total++;
 
     userThrowEl.textContent = `You threw ${userThrow}.`;
     compThrowEl.textContent = `I threw ${compThrow}.`;
 
-    if (userWinOrLose === 'draw') {
-        whoWonEl.textContent = 'We draw!';
-    } else {
-        whoWonEl.textContent = `You ${userWinOrLose}!`;}
+    userWinOrLose === 'draw' ? whoWonEl.textContent = 'We draw!' : whoWonEl.textContent = `You ${userWinOrLose}!`;
 
 
     if (userWinOrLose === 'win') {
