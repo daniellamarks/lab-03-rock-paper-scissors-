@@ -23,7 +23,6 @@
         </section>
         
         <div class="images-wrap">
-        
             <section class="user-choice-wrap">
                 <p class="font">YOU</p>
                 <label>
@@ -46,22 +45,24 @@
                 <img class="bounce-6" src="./assets/rock.png">
             </section>
         </div>
-        <button id="throw">Rochambeau!</button>
+        
+        <div class="just-button">
+            <button id="throw" class="throw font">Rochambeau!</button>
+        </div>
         
         <section class="display-score">
             <p id="user-throw"></p>
             <p id="computer-throw"></p>
-            <p id="who-won"></p>
+            <p id="who-won" class="font"></p>
             <div class="wins-and-losses">
-                <div>Wins: <span id="wins">0</span></div>
-                <div>Losses: <span id="losses"> 0</span></div>
-                <div>Draws: <span id="draws">0</span></div>
+                <div>Wins: <p id="wins" class="font-small">0</p></div>
+                <div>Losses: <p id="losses" class="font-small"> 0</p></div>
+                <div>Draws: <p id="draws" class="font-small">0</p></div>
             </div>
             <button id="reset">Reset Score</button>
-            <div>You have reset the score <span id="reset-times"></span> times.</div>
+            <div>You have reset the score <span id="reset-times">0</span> times.</div>
         </section>
         
-
     </main>
     
     <footer>
