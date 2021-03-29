@@ -1,8 +1,7 @@
 // import functions and grab DOM elements
-import { getRandomThrow } from './get-random-throw.js';
-import { didUserWin } from './utils.js';
+import { didUserWin, getRandomThrow } from './utils.js';
 
-const buttonEl = document.getElementById('throw');
+const buttonEl = document.getElementById('throw-button');
 const userThrowEl = document.getElementById('user-throw');
 const compThrowEl = document.getElementById('computer-throw');
 const whoWonEl = document.getElementById('who-won');
