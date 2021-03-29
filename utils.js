@@ -26,7 +26,6 @@ export function didUserWin(player, computer) {
             result = 'draw';
             break;
     }
-
     return result;
 }
 
