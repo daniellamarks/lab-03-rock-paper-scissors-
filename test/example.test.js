@@ -1,6 +1,5 @@
 // IMPORT MODULES under test here:
 import { didUserWin } from '../utils.js';
-
 const test = QUnit.test;
 
 test('if player = computer, return draw', (expect) => {
@@ -49,3 +48,5 @@ test('if player === scissors && computer === paper return lose', (expect) => {
     expect.equal(actual, expected);
 
 });
+
+ 
